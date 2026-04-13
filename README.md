@@ -75,7 +75,6 @@ A brand runs paid campaigns across multiple social media platforms but doesn't k
 | Matplotlib & Seaborn | Data visualization |
 | Scikit-learn | ML models |
 | XGBoost | Best ML model |
-| MySQL | Data storage |
 | Power BI | Interactive dashboard |
 | Jupyter Notebook | Development environment |
 
@@ -83,17 +82,47 @@ A brand runs paid campaigns across multiple social media platforms but doesn't k
 
 ## 📁 Project Structure
 
+```
 social-media-campaign-analysis/
-├── data/                    # Raw and cleaned datasets
-├── notebooks/               # Jupyter notebooks
-│   ├── data_loading_and_exploration.ipynb
-│   ├── EDA_Analysis.ipynb
-│   └── ML_Model.ipynb
-├── models/                  # Saved ML models
-├── dashboard/               # Power BI files
-├── images/                  # Charts and visualizations
-├── powerbi_exports/         # CSV files for Power BI
-└── README.md
+|
+|-- data/
+|   |-- Social_Media_Advertising.csv
+|   |-- cleaned_campaign_data.csv
+|
+|-- notebooks/
+|   |-- data_loading_and_exploration.ipynb
+|   |-- EDA_Analysis.ipynb
+|   |-- ML_Model.ipynb
+|
+|-- models/
+|   |-- xgb_campaign_model.pkl
+|   |-- label_encoders.pkl
+|
+|-- dashboard/
+|   |-- Social_Media_Campaign_Analysis.pbix
+|   |-- Social_Media_Campaign_Analysis.pdf
+|
+|-- images/
+|   |-- channel_performance.png
+|   |-- campaign_goal_analysis.png
+|   |-- roi_distribution.png
+|   |-- location_analysis.png
+|   |-- time_analysis.png
+|   |-- model_evaluation.png
+|   |-- feature_importance.png
+|   |-- dashboard_page1.png
+|   |-- dashboard_page2.png
+|   |-- dashboard_page3.png
+|
+|-- powerbi_exports/
+|   |-- powerbi_channel_summary.csv
+|   |-- powerbi_monthly_summary.csv
+|   |-- powerbi_audience_summary.csv
+|   |-- powerbi_goal_summary.csv
+|   |-- powerbi_main_data.csv
+|
+|-- README.md
+```
 
 ---
 
@@ -115,9 +144,11 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost jupyter
 - Place in `data/` folder
 
 **4. Run notebooks in order:**
-data_loading_and_exploration.ipynb
-EDA_Analysis.ipynb
-ML_Model.ipynb
+```
+1. data_loading_and_exploration.ipynb
+2. EDA_Analysis.ipynb
+3. ML_Model.ipynb
+```
 
 **5. Open Power BI Dashboard:**
 - Open `dashboard/Social_Media_Campaign_Analysis.pbix`
@@ -126,23 +157,22 @@ ML_Model.ipynb
 
 ## 💡 Business Recommendations
 
-1. **Reallocate Pinterest budget** → Move to Instagram for 5.6x better ROI
-2. **Focus on Product Launch campaigns** → Highest success rate
-3. **Target All Ages segment** → Consistently highest ROI
-4. **Run campaigns in April** → Best monthly performance
-5. **Schedule campaigns on Fridays** → Best day for engagement
-6. **Use ML predictions** → Pre-screen campaigns before spending budget
+1. **Reallocate Pinterest budget** to Instagram for 5.6x better ROI
+2. **Focus on Product Launch campaigns** for highest success rate
+3. **Target All Ages segment** for consistently highest ROI
+4. **Run campaigns in April** for best monthly performance
+5. **Schedule campaigns on Fridays** for best engagement
+6. **Use ML predictions** to pre-screen campaigns before spending budget
 
 ---
 
-## 📈 Resume Impact
+## 📈 Project Highlights
 
-This project demonstrates:
-- ✅ End-to-end data pipeline (300K+ records)
+- ✅ End-to-end data pipeline (300,000+ records)
 - ✅ Advanced EDA and business insights
-- ✅ Machine Learning with 71.55% accuracy
-- ✅ Interactive Power BI dashboard
-- ✅ Real business recommendations
+- ✅ Machine Learning with 71.55% accuracy and 0.80 AUC
+- ✅ Interactive 3-page Power BI dashboard
+- ✅ Real business recommendations with dollar impact
 
 ---
 
@@ -152,4 +182,3 @@ This project demonstrates:
 - GitHub: [github.com/Lovepreet1121](https://github.com/Lovepreet1121)
 - LinkedIn: [linkedin.com/in/love-preet-/](https://linkedin.com/in/love-preet-/)
 - Email: lp5120452@gmail.com
-
